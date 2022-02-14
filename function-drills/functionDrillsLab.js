@@ -50,7 +50,12 @@ function printName(name) {
   Make sure to call your function and pass in an argument.
 */
 
-//CODE HERE
+function greeting(name) {
+  String(name);
+  console.log(`Hello, ${name}`)
+}
+
+greeting("Casey")
 
 
 ////////////////// PROBLEM 5 ////////////////////
@@ -60,11 +65,13 @@ function printName(name) {
     which will be numbers. 
     The function should return the bigger number. 
     If the numbers are the same, just return the number.
-
     Brownie points if you use a ternary statement (only spend significant time on this if you have wiggle room)
 */
 
-//CODE HERE
+let compareNums = (num1, num2) => {
+  bigNum = (num1 > num2) ? num1 : num2;
+  return bigNum;
+}
 
 
 ////////////////// PROBLEM 6 ////////////////////
@@ -75,8 +82,14 @@ function printName(name) {
   Create a variable outside the function called 'sum' and set it equal to add invoked (called), passing in 2 arguments.
 */
 
-//CODE HERE
+function add(val1, val2) {
+  val1 = +val1;
+  val2 = +val2;
+  return val1 + val2;
+}
 
+sum = add(true, false);
+console.log(sum);
 
 ////////////////// PROBLEM 7 ////////////////////
 
@@ -91,7 +104,7 @@ const exclaim = function(str) {
 
 // arrow
 // declaration
-// expression
+expression
 
 
 
@@ -106,16 +119,17 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// arrow
+arrow
 // declaration
 // expression
 
 /*
   Rewrite exclaimTwo to be a single line.
   Call your new function exclaimThree
-
   Brownie points if you use a template string
 */
+
+const exclaimThree = str => `${str.toUpperCase()}!!!`;
 
 
 
@@ -131,7 +145,7 @@ function exclaimFour(str) {
 }
 
 // arrow
-// declaration
+declaration
 // expression
 
 
