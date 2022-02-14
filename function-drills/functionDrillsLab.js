@@ -158,7 +158,18 @@ declaration
   Create a variable called 'nameGreeting' and set it equal to your function invoked (called) passing in an argument.
 */
 
-//CODE HERE
+function nameCheck(name) {
+  if (name === "Steven") {
+    return `What's up ${name}`;
+  } else if (name === "Bryan") {
+    return `Hey ${name}`;
+  } else {
+    return `Cool name, ${name}`;
+  }
+}
+
+nameGreeting = nameCheck("Bill");
+// console.log(nameGreeting);
 
 
 ////////////////// PROBLEM 11 ////////////////////
@@ -171,7 +182,20 @@ declaration
   Create a variable called 'colorRating' and set it equal to faveColorFinder invoked (called), passing in an argument.
 */
 
-//CODE HERE
+function faveColorFinder(color) {
+  if (color === "red") {
+    return `${color} is a great color`;
+  } else if (color === "green") {
+    return `${color} is a solid color`;
+  } else if (color === "black") {
+    return `so trendy`;
+  } else {
+    return `you need to evaluate your favorite color choice`;
+  }
+}
+
+let colorRating = faveColorFinder("black");
+// console.log(colorRating);
 
 
 ////////////////// PROBLEM 12 ////////////////////
@@ -182,7 +206,13 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
   Call the function, passing in the `namesArr` array (above).
 */
 
-//CODE HERE
+function printAllNames(array) {
+  for (i = 0; i < array.length; i++) {
+    console.log(`${array[i]}`);
+  }
+}
+
+printAllNames(namesArr);
 
 
 ////////////////// PROBLEM 13 ////////////////////
@@ -193,7 +223,16 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
   Outside the function, create a variable called `oddChecker` and set it equal to your function invoked, making sure to pass in an argument.
 */
 
-//CODE HERE
+function thatsOdd(number) {
+  if (number % 2 === 0) {
+    return "That's not odd!";
+  } else {
+    return "That is odd indeed!";
+  }
+}
+
+oddChecker = thatsOdd(3);
+// console.log(oddChecker);
 
 
 ////////////////// PROBLEM 14 ////////////////////
@@ -206,7 +245,8 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
     we would expect the function to return 'Sharknado is the best movie ever!'
 */
 
-//CODE HERE
+bestMovie = title => `${title} is the best movie ever!`;
+// console.log(bestMovie("Interstellar"));
 
 
 ////////////////// PROBLEM 15 ////////////////////
@@ -220,8 +260,20 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
   Return the answers array inside of the function to a variable called `arrayEvaluator`.
 */
 
-//CODE HERE
+function bigOrSmall(arr) {
+  let answers = [];
+  for (i = 0; i < arr.length; i++) {
+    if (arr[i] > 100) {
+      answers.push("big");
+    } else {
+      answers.push("small");
+    }
+  }
+  return answers;
+}
 
+arrayEvaluator = bigOrSmall(bigOrSmallArray);
+// console.log(arrayEvaluator);
 
 ////////////////// PROBLEM 16 ////////////////////
 let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
